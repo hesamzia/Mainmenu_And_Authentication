@@ -1,5 +1,5 @@
 # Mainmennu-And-Authentication
-Please read the author's introduction below.
+Please read the author's introduction below...
 
 # TO DO
 - [X] Preparing the application template with Flask Blueprint
