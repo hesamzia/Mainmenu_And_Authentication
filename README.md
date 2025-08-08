@@ -32,10 +32,10 @@ In this application, we prepare a customizable menu  with a program to authentic
 * Use flask blueprint for making application components and supporting common patterns within an application or across applications.
 
 # How to run app
->make a folder
->clone from github
->make venv
->Pip install –r requirmetns.txt 
->set FLASK_APP=Mainmennu-And-Authentication
->flask --app Mainmennu-And-Authentication run
+- make a folder
+- clone from github
+- make venv
+- Pip install –r requirmetns.txt 
+- set FLASK_APP=Mainmennu-And-Authentication
+- flask --app Mainmennu-And-Authentication run
 
