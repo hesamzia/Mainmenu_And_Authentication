@@ -21,7 +21,6 @@ def login_post():
     email = request.form.get('email')
     password = request.form.get('password')
     remember = True if request.form.get('remember') else False
-
     user = User.query.filter_by(email=email).first()
 
     # check if the user actually exists
@@ -47,8 +46,6 @@ def signup_post():
     email = request.form.get('email')
     name = request.form.get('name')
     password = request.form.get('password')
-
-    print(email, name, password)
 
     user = User.query.filter_by(email=email).first() # if this returns a user, then the email already exists in database
 
