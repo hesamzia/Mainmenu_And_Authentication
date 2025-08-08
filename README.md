@@ -8,8 +8,10 @@ Please read the author's introduction below...
 - [X] Create the application folder, create a virtual environment, and install Flask.
 - [X] Preparing the application folder and opening it in VS Code
 - [X] Creating menus with the help of example and preparing routes and the main structure of the program
-- [ ] Creating user models(database structure)
-- [ ] Configuring Database
+- [X] Creating user models(database structure)
+- [X] Configuring Database
+- [X] Start connecting to the database by setting up a sign-up. 
+- [X] Summarizing the init file and concentrating the source in other files
 # Introduction
 When I was programming in the past, one of the most important issues in any program was the main menus of the program and creating appropriate access to them for users. It was very difficult when using standard C or ANSI C , but later it became easier with the advent of Visual languages.That's why I thought I'd do this with Python and Flask, and have a standard menu that I could use in any program with a little modification.
 In my new programming career, I'm trying to use artificial intelligence as an employee and collaborator. I planned to do this with the help of artificial intelligence and codeium (windsurf).
