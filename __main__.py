@@ -1,7 +1,9 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy_utils import database_exists
+from flask_login import LoginManager
 from .models import db
+from .models import User
 
 '''
 This is the main entry point for the Flask application. we configure the app, 
@@ -25,7 +27,15 @@ def create_app():
 
     configure_app(app)
     db.init_app(app)
+    
+    login_manager = LoginManager()
+    login_manager.login_view = 'auth.login'
+    login_manager.init_app(app)
 
+    @login_manager.user_loader
+    def load_user(user_id):
+        # since the user_id is just the primary key of our user table, use it in the query for the user
+        return User.query.get(int(user_id))
     if not database_exists(f"sqlite:///{app.root_path}/DB/db.sqlite"):
         with app.app_context():
             db.create_all()
